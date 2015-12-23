@@ -53,6 +53,11 @@ namespace Prism.Wpf.Tests.Mocks
             throw new System.NotImplementedException();
         }
 
+        public void Clear()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void Remove(object view)
         {
             throw new System.NotImplementedException();

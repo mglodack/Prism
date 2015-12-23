@@ -22,6 +22,14 @@ namespace Prism.Wpf.Tests.Mocks
             return null;
         }
 
+        public void Clear()
+        {
+            foreach (var view in MockViews.Items)
+            {
+                Remove(view);
+            }
+        }
+
         public void Remove(object view)
         {
             MockViews.Items.Remove(view);

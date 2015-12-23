@@ -263,6 +263,17 @@ namespace Prism.Regions
         }
 
         /// <summary>
+        /// Removes all views from the region
+        /// </summary>
+        public virtual void Clear()
+        {
+            foreach(var view in Views)
+            {
+                Remove(view);
+            }
+        }
+
+        /// <summary>
         /// Removes the specified view from the region.
         /// </summary>
         /// <param name="view">The view to remove.</param>

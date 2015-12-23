@@ -67,6 +67,11 @@ namespace Prism.Regions
         IRegionManager Add(object view, string viewName, bool createRegionManagerScope);
 
         /// <summary>
+        /// Removes all views from the region
+        /// </summary>
+        void Clear();
+
+        /// <summary>
         /// Removes the specified view from the region.
         /// </summary>
         /// <param name="view">The view to remove.</param>
